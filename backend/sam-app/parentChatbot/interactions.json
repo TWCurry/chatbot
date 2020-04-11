@@ -1,0 +1,7 @@
+{
+    "interactions": {
+        "greetings": ["hello", "hey", "hi", "howdy", "good day"],
+        "operators": ["yes", "no"],
+        "closings": ["bye", "goodbye"]
+    }
+}
