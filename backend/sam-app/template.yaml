@@ -8,9 +8,16 @@ Globals:
     Timeout: 3
 
 Resources:
-  HelloWorldFunction:
+  parentChatbot:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: hello_world/
+      CodeUri: parentChatbot/
+      Handler: app.lambda_handler
+      Runtime: python3.6
+
+  startSession:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: startSession/
       Handler: app.lambda_handler
       Runtime: python3.6
